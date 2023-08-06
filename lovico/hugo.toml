@@ -1,0 +1,10 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Loviko'
+
+
+theme = "loviko"
+
+[permalinks]
+
+posts = ":slug"

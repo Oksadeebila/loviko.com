@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<h3>Profil</h3>
+<ul>
+    <!-- variabel .site.regularpages untuk halaman spesifik saj aloop id bawah ini -->
+    {{range where .Site.RegularPages "Section" "profil"}}
+    <li>
+        <a href="{{.Permalink}}"> {{.Title}} </a>
+        <span>{{.Date.Format "303-08-06"}}</span>
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}
